@@ -496,6 +496,8 @@ oOrch.Run()    ! Abre ventana de progreso y ejecuta toda la cola de comandos
 - Barra animada de progreso (`PulseBarClass`) durante reintentos
 - Botón cancelar (pregunta confirmación antes de abortar)
 
+![Ventana de progreso del orquestador](assets/orchestrator_run.png)
+
 ### Cancelación
 
 ```clarion
