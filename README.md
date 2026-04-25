@@ -838,6 +838,27 @@ WHERE serie = :serial
 
 ---
 
+## Versión
+
+La constante `FISCAL_VERSION` (definida en [FiscalTypes.inc](FiscalTypes.inc)) identifica la versión de la biblioteca.
+
+**Formato:** `YY.MM.DDX`
+
+| Parte | Descripción | Ejemplo |
+|---|---|---|
+| `YY` | Año (2 dígitos) | `26` |
+| `MM` | Mes (2 dígitos) | `04` |
+| `DD` | Día (2 dígitos) | `25` |
+| `X` | Revisión del día (letra: A, B, C…) | `A` |
+
+### Historial
+
+| Versión | Cambios |
+|---|---|
+| `26.04.25A` | Primera versión pública |
+
+---
+
 ## Notas para el desarrollador
 
 - **Nunca instanciar `FiscalConfig` directamente**: es un singleton. Acceder siempre a través de su instancia global.
