@@ -39,6 +39,16 @@ Biblioteca de clases Clarion para integración con controladores fiscales electr
 | `..\access\access.lib` | Utilidades de base de datos y presentación de mensajes |
 | `..\group\group.lib` | Gestión de variables globales (`ZVar_GetAndSet`) |
 
+#### [mikeduglas/libcurl](https://github.com/mikeduglas/libcurl)
+
+Wrapper Clarion para la biblioteca `libcurl`, que permite realizar peticiones HTTP/HTTPS desde código Clarion nativo. FiscalClass la utiliza a través de `TCurlClass` para enviar los comandos JSON al controlador fiscal mediante HTTP POST al endpoint `http://<ip>/fiscal.json`. Es un requisito indispensable: sin esta biblioteca, todos los comandos fallan con `HTTP:CURL_ERROR`.
+
+> La DLL `libcurl.dll` debe estar disponible en el PATH del sistema o en la carpeta del ejecutable.
+
+#### [mikeduglas/cJSON](https://github.com/mikeduglas/cJSON)
+
+Wrapper Clarion para el parser `cJSON`, que provee serialización y deserialización de documentos JSON. FiscalClass lo utiliza para construir los payloads de cada comando (solicitudes) y para interpretar las respuestas del controlador fiscal (éxito, error, `ControladorOcupado`). Sin esta biblioteca no es posible comunicarse con el controlador, ya que el protocolo completo está basado en JSON.
+
 ### Variables globales requeridas (via `ZVar_GetAndSet`)
 
 | Variable | Tipo | Descripción |
