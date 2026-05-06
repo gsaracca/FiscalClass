@@ -4,6 +4,7 @@ Biblioteca de clases Clarion para integración con controladores fiscales electr
 
 **Autor:** Gustavo Saracca  
 **Plataforma:** Clarion (CLW/INC)  
+**Contacto:** gsaracca@gmail.com 
 **País:** Argentina — Controladores fiscales homologados AFIP  
 **Licencia:** [MIT](LICENSE)
 
