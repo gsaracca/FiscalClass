@@ -2,11 +2,11 @@
 ! CLASS : FiscalOrchestra
 ! --------------------------------------------------------------------------------------------------
   OMIT('_EndOfInclude_', _PulseBarClass_ )
-_PulseBarClass_   EQUATE(1)
+_PulseBarClass_     EQUATE(1)
 
 MAX_BOXES           equate(12)
 
-PulseBarClass       class,type,module('PulseBarClass.clw'),link('PulseBarClass.clw')
+PulseBarClass       class,type,module( 'PulseBarClass.clw' ),link( 'PulseBarClass.clw' )
 Win                     &Window                 ! Ventana donde dibuja
 BoxColor                long,dim(MAX_BOXES)     ! Colores de fondo
 BoxCount                long                    ! Cantidad de cuadros (1..12)
